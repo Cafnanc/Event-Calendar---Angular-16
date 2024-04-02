@@ -246,11 +246,8 @@ export class AppComponent implements OnInit, AfterViewInit {
 
         if (arg.view.type === 'timeGridWeek' || arg.view.type === 'timeGridDay') {
           if (arg.start && arg.startStr.includes('T')) {
-            console.log(arg.start, "datestr")
-            let date = arg.event.start.split('T')[1].substring(0,5)
-            console.log(date, "dates")
+            // let date = arg.event.start.split('T')[1].substring(0,5)
             startTime = arg.event.startStr.split('T')[1].substring(0, 5);
-            console.log(startTime)
           }
         }
         else {
